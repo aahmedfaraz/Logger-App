@@ -1,0 +1,37 @@
+{
+    "developers": [
+        {
+            "id": "0",
+            "firstName": "Ahmed",
+            "lastName": "Faraz"
+        },
+        {
+            "id": "1",
+            "firstName": "Adil",
+            "lastName": "Altaf"
+        }
+    ],
+    "logs": [
+        {
+            "id": "0",
+            "message": "Created Home Page",
+            "attention": false,
+            "date": "08-07-2021",
+            "developer": "Ahmed Faraz"
+        },
+        {
+            "id": "1",
+            "message": "Created Product Page",
+            "attention": false,
+            "date": "09-08-2021",
+            "developer": "Ahmed Faraz"
+        },
+        {
+            "id": "2",
+            "message": "Created Cart Page",
+            "attention": true,
+            "date": "10-09-2021",
+            "developer": "Adil Altaf"
+        }
+    ]
+}
