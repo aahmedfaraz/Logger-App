@@ -1,37 +1,30 @@
 {
-    "developers": [
-        {
-            "id": "0",
-            "firstName": "Ahmed",
-            "lastName": "Faraz"
-        },
-        {
-            "id": "1",
-            "firstName": "Adil",
-            "lastName": "Altaf"
-        }
-    ],
-    "logs": [
-        {
-            "id": "0",
-            "message": "Created Home Page",
-            "attention": false,
-            "date": "08-07-2021",
-            "developer": "Ahmed Faraz"
-        },
-        {
-            "id": "1",
-            "message": "Created Product Page",
-            "attention": false,
-            "date": "09-08-2021",
-            "developer": "Ahmed Faraz"
-        },
-        {
-            "id": "2",
-            "message": "Created Cart Page",
-            "attention": true,
-            "date": "10-09-2021",
-            "developer": "Adil Altaf"
-        }
-    ]
+  "developers": [
+    {
+      "id": "0",
+      "firstName": "Ahmed",
+      "lastName": "Faraz"
+    },
+    {
+      "firstName": "Robin",
+      "lastName": "Hood",
+      "id": "n5x96RA"
+    }
+  ],
+  "logs": [
+    {
+      "message": "Completed Project 1 - SAMPLE",
+      "attention": false,
+      "developer": "Ahmed Faraz",
+      "date": "2021-08-14T21:47:02.832Z",
+      "id": 1
+    },
+    {
+      "message": "Working on Project 2 - SAMPLE",
+      "attention": true,
+      "developer": "Robin Hood",
+      "date": "2021-08-14T21:47:18.027Z",
+      "id": 2
+    }
+  ]
 }

@@ -1,7 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.navbar {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Comfortaa", cursive;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.navbar p {
+  font-size: 20px;
+}
+
+.navbar small {
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 p.center {
@@ -14,4 +35,9 @@ p.center {
   border: 1px solid red;
   padding: 0 5px;
   border-radius: 100px;
+}
+
+.delete-icon {
+  display: block;
+  text-align: right;
 }

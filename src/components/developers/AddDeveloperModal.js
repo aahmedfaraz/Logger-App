@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import M from 'materialize-css/dist/js/materialize.min.js';
+import { connect } from 'react-redux';
+import { addDeveloper } from '../../actions/developerActions';
+import PropTypes from 'prop-types'
 
-const AddDeveloperModal = () => {
+const AddDeveloperModal = ({addDeveloper}) => {
 
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -10,7 +13,13 @@ const AddDeveloperModal = () => {
         if(firstName.trim() === '' || lastName.trim() === ''){
             M.toast({html: 'Some credentials are missing'});
         } else  {
-            console.log(firstName, lastName);
+            const newDeveloper = {
+                firstName,
+                lastName
+            }
+
+            addDeveloper(newDeveloper);
+
             setFirstName('');
             setLastName('');
         }
@@ -56,4 +65,8 @@ const AddDeveloperModal = () => {
     )
 }
 
-export default AddDeveloperModal;
+AddDeveloperModal.propTypes = {
+    addDeveloper: PropTypes.func.isRequired,
+}
+
+export default connect(null, {addDeveloper})(AddDeveloperModal);

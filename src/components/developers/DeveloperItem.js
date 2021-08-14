@@ -1,7 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { deleteDeveloper } from '../../actions/developerActions';
 
-const DeveloperItem = ({developer}) => {
+const DeveloperItem = ({developer, deleteDeveloper}) => {
 
     const {firstName, lastName} = developer;
 
@@ -9,7 +11,11 @@ const DeveloperItem = ({developer}) => {
         <li className="collection-item">
             <div>
                 { firstName } { lastName }
-                <a href="#!" className="secondary-content">
+                <a 
+                    href="#!" 
+                    className="secondary-content"
+                    onClick={() => deleteDeveloper(developer.id)}
+                >
                     <i className="material-icons grey-text">delete</i>
                 </a>
             </div>
@@ -19,6 +25,7 @@ const DeveloperItem = ({developer}) => {
 
 DeveloperItem.propTypes = {
     developer: PropTypes.object.isRequired,
+    deleteDeveloper: PropTypes.func.isRequired,
 }
 
-export default DeveloperItem
+export default connect(null, { deleteDeveloper })(DeveloperItem);
